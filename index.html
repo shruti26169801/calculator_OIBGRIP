@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Oswald&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+<h1 class="name">CALCULATOR</h1>
+<div class="first">
+  <input type="text"  value="" id="result" placeholder="result"/>
+  <input class="a" type="button"  value="C" onclick="clearScreen()"/>
+</div>
+
+<div class="second">
+<input type="button"  value="1" onclick="shruti(1)"/>
+<input type="button"  value="2" onclick="shruti(2)"/>
+<input type="button"  value="3" onclick="shruti(3)"/>
+<input type="button"  value="+" onclick="shruti('+')"/>
+</div>
+
+<div class="third">
+  <input type="button"  value="4" onclick="shruti(4)"/>
+  <input type="button"  value="5" onclick="shruti(5)"/>
+  <input type="button"  value="6" onclick="shruti(6)"/>
+  <input type="button"  value="-" onclick="shruti('-')"/>
+</div>
+
+<div class="forth">
+  <input type="button"  value="7" onclick="shruti(7)"/>
+  <input type="button"  value="8" onclick="shruti(8)"/>
+  <input type="button"  value="9" onclick="shruti(9)"/>
+  <input type="button"  value="*" onclick="shruti('*')"/>
+</div>
+
+<div class="fifth">
+  <input type="button"  value="/" onclick="shruti('/')"/>
+  <input type="button"  value="0" onclick="shruti(0)"/>
+  <input type="button"  value="." onclick="shruti('.')"/>
+  <input type="button"  value="=" onclick="result.value = eval(result.value)"/>
+</div>
+
+    <script type="text/javascript"  src="index.js"> </script>
+  </body>
+</html>
